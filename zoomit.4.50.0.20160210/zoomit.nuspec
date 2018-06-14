@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>zoomit</id>
+    <version>4.50.0.20180611</version>
+    <title>ZoomIt</title>
+    <authors>Mark Russinovich</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>https://technet.microsoft.com/sysinternals/bb469936</licenseUrl>
+    <projectUrl>https://technet.microsoft.com/sysinternals/bb897434</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/6a9cab7b61bded6a537e8b969f0b74cf78d11a65/icons/zoomit.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ZoomIt is a screen zoom and annotation tool for technical presentations that include application demonstrations. ZoomIt runs unobtrusively in the tray and activates with customizable hotkeys to zoom in on an area of the screen, move around while zoomed, and draw on the zoomed image. I wrote ZoomIt to fit my specific needs and use it in all my presentations.</description>
+    <summary>Presentation utility for zooming and drawing on the screen</summary>
+     <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+    #### Version History
+    * 4.5 [Fall 2013]
+    * 4.2 [Fall 2012]
+
+    #### Changes From Default Install
+
+    1. **[default behaviour]** The program will pester you with a license agreement every time it is run until you agree to the license.
+      * **[to change this]** Run the software and agree to the license. This makes a change in `HKCU\Software\Sysinternals\ZoomIt`
+    2. **[default behaviour]** By default, the zoom key combo is Ctrl+1, which unfortunately clashes with Eclipse's auto-correct combo. Since Eclipse is much more frequently used, ZoomIt loses, and needs to be mapped to Ctrl+F1. In order to keep the other ZoomIt key combos consistent, they should be mapped to function keys as well.
+      * **[to change this]** Run the software, go through each of the tabs (Zoom, LiveZoom, etc.) and set the combos accordingly. This makes a change in `HKCU\Software\Sysinternals\ZoomIt`
+    3. **[default behaviour]** ZoomIt does not load on startup by default. We want it to.
+      * **[to change this]** Run the software and check the "Run ZoomIt when Windows starts" checkbox. This makes a change in `HKCU\Software\Microsoft\WIndows\CurrentVersion\Run`
+    </releaseNotes>
+    <copyright>© 2006-2013 Mark Russinovich</copyright>
+  </metadata>
+</package>
