@@ -3,7 +3,7 @@
   <metadata>
     <id>puttygen</id>
     <version>0.70.0.20180615</version>
-    <title>PuTTY (Install)</title>
+    <title>PuTTYgen</title>
     <authors>Simon Tatham</authors>
     <owners>jpratt</owners>
     <licenseUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html</licenseUrl>
