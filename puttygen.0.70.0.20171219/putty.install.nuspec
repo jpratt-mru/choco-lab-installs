@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>puttygen</id>
+    <version>0.70.0.20180615</version>
+    <title>PuTTY (Install)</title>
+    <authors>Simon Tatham</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html</licenseUrl>
+    <projectUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>PuTTYgen is a RSA, DSA, ECDSA and EdDSA key generation utility.</description>
+    <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+  </metadata>
+</package>
