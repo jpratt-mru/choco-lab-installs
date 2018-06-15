@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>justcolorpicker</id>
+    <version>5.1.0.20180615</version>
+    <title>JustColorPicker</title>
+    <authors>Anny Studio</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>http://annystudio.com/software/colorpicker/</licenseUrl>
+    <projectUrl>http://annystudio.com/software/colorpicker/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Free portable colour picker and colour editor for web designers and digital artists.</description>
+     <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+  </releaseNotes>
+  </metadata>
+</package>
