@@ -4,7 +4,7 @@
 # Add/Change a registry value/value data pair in a given registry key for every user (including Default)
 # on the system.
 #
-Function Add-RegistryValueForEveryUser ($RegKey, $RegKeyValueName, $RegKeyValueData, $RegKeyValueType = "String") {
+Function Add-RegistryEntryForEveryUser ($RegKey, $RegKeyValueName, $RegKeyValueData, $RegKeyValueType = "String") {
   $ThingToDo = "addRegistryValue $RegKey $RegKeyValueName $RegKeyValueData $RegKeyValueType"
   # Users who are currently logged in
   doToAllLoggedInUsers $ThingToDo
