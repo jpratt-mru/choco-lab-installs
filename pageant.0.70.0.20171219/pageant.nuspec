@@ -12,5 +12,9 @@
     <description>Pageant is an SSH authentication agent for PuTTY, PSCP and Plink.</description>
     <dependencies>
       <dependency id="macotools.extension" />
-    </dependencies></metadata>
+    </dependencies>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/Pageant/pageant.notes.md
+    </releaseNotes>
+    </metadata>
 </package>
