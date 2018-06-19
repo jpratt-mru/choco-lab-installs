@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>isoplot</id>
+    <version>1.0.0.20180619</version>
+    <title>Isoplot</title>
+    <authors>BGC</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>http://www.bgc.org/isoplot_etc/isoplot.html</licenseUrl>
+    <projectUrl>http://www.bgc.org/isoplot_etc/isoplot.html</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Isoplot is a flexible tool for the mathematical and graphical interpretation of radiogenic-isotope data, especially as applied to geochronology.
+    </description>
+    <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/Isoplot/isoplot.notes.md
+    </releaseNotes>
+    <copyright>BGC</copyright>
+  </metadata>
+</package>
