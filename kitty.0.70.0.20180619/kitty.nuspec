@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>kitty</id>
+    <version>0.70.0.20180619</version>
+    <title>KiTTY</title>
+    <authors>Cyril Dupont</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>https://raw.githubusercontent.com/majkinetor/au-packages/master/kitty/legal/LICENCE.TXT</licenseUrl>
+    <projectUrl>http://www.9bis.net/kitty/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      KiTTY is a fork of PuTTY (started from version 0.62 beta), the most popular Telnet and SSH client for Windows and Unix. It runs on Windows and it has an impressive collection of one of the most requested features that are missing from PuTTY. 
+    </description>
+    <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/KiTTY/kitty.notes.md
+    </releaseNotes>
+    <copyright>Cyril Dupont</copyright>
+  </metadata>
+</package>
