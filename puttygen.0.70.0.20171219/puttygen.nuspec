@@ -13,5 +13,8 @@
     <dependencies>
       <dependency id="macotools.extension" />
     </dependencies>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/PuTTYgen/puttygen.notes.md
+    </releaseNotes>
   </metadata>
 </package>
