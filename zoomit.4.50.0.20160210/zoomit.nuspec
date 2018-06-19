@@ -16,18 +16,7 @@
       <dependency id="macotools.extension" />
     </dependencies>
     <releaseNotes>
-    #### Version History
-    * 4.5 [Fall 2013]
-    * 4.2 [Fall 2012]
-
-    #### Changes From Default Install
-
-    1. **[default behaviour]** The program will pester you with a license agreement every time it is run until you agree to the license.
-      * **[to change this]** Run the software and agree to the license. This makes a change in `HKCU\Software\Sysinternals\ZoomIt`
-    2. **[default behaviour]** By default, the zoom key combo is Ctrl+1, which unfortunately clashes with Eclipse's auto-correct combo. Since Eclipse is much more frequently used, ZoomIt loses, and needs to be mapped to Ctrl+F1. In order to keep the other ZoomIt key combos consistent, they should be mapped to function keys as well.
-      * **[to change this]** Run the software, go through each of the tabs (Zoom, LiveZoom, etc.) and set the combos accordingly. This makes a change in `HKCU\Software\Sysinternals\ZoomIt`
-    3. **[default behaviour]** ZoomIt does not load on startup by default. We want it to.
-      * **[to change this]** Run the software and check the "Run ZoomIt when Windows starts" checkbox. This makes a change in `HKCU\Software\Microsoft\WIndows\CurrentVersion\Run`
+    https://github.com/jpratt-mru/software.install.notes/blob/master/ZoomIt/zoomit.notes.md
     </releaseNotes>
     <copyright>© 2006-2013 Mark Russinovich</copyright>
   </metadata>
