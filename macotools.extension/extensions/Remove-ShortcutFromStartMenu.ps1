@@ -10,7 +10,7 @@ Function Remove-ShortcutFromStartMenu ($Shortcut) {
   removeShortcutFromAllUsersStartMenu
 }
 
-Function removeShortcutFromEachUsersStartMenu() {
+Function removeShortcutFromEachUsersStartMenu($Shortcut) {
   Foreach ($User in $(getUserNames)) {
     $Path = "$(userStartMenuLocation $User)\$Shortcut"
     removeFolderOrLink $Path  
@@ -30,13 +30,13 @@ Function removeFolderOrLink($Path) {
   }
 }
 
-Function removeShortcutFromDefault() {
+Function removeShortcutFromDefault($Shortcut) {
   $Path = "$(defaultUserStartMenuLocation)\$Shortcut"
   removeFolderOrLink $Path 
 }
 
 
-Function  removeShortcutFromAllUsersStartMenu() {
+Function  removeShortcutFromAllUsersStartMenu($Shortcut) {
   $Path = "$global:ALL_USERS_START_MENU_LOCATION\$Shortcut"
   removeFolderOrLink $Path 
 }
