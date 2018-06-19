@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>7zip</id>
+    <version>18.5.0.20180619</version>
+    <title>7-Zip</title>
+    <authors>Igor Pavlov</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
+    <projectUrl>http://www.7-zip.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>7-Zip is a file archiver with a high compression ratio.</description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" />
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/7-Zip/7zip.notes.md
+    </releaseNotes>
+  </metadata>
+</package>
