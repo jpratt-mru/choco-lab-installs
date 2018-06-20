@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jdk8</id>
+    <version>8.0.172</version>
+    <title>Java SE</title>
+    <authors>Sun Microsystems/Oracle Corporation</authors>
+    <owners>oota_ken, jpratt</owners>
+    <licenseUrl>http://www.oracle.com/technetwork/java/javase/terms/license/index.html</licenseUrl>
+    <projectUrl>http://www.oracle.com/technetwork/java/javase/downloads/index.html</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>By default this package installs JDK according to your platform (x86 or x64).</description>
+    <summary>The Java Development Kit (JDK) version 8.0.172</summary>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/JDK8/jdk8.notes.md
+    </releaseNotes>
+    <packageSourceUrl>https://chocolatey.org/packages/jdk8/</packageSourceUrl>
+  </metadata>
+</package>
