@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>processing</id>
+    <version>3.3.7</version>
+    <title>Processing</title>
+    <authors>Processing Foundation</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>https://github.com/processing/processing/blob/master/license.txt</licenseUrl>
+    <projectUrl>https://processing.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Since 2001, Processing has promoted software literacy within the visual arts and visual literacy within technology. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.</description>
+    <summary>Processing is a flexible software sketchbook and a language for learning how to code within the context of the visual arts.</summary>
+     <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <releaseNotes>
+    https://github.com/jpratt-mru/software.install.notes/blob/master/ZoomIt/zoomit.notes.md
+    </releaseNotes>
+    <copyright>Processing Foundation</copyright>
+  </metadata>
+</package>
