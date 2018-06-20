@@ -5,9 +5,9 @@
 # plus AllUsers, plus the Default User
 #
 Function Remove-ShortcutFromStartMenu ($Shortcut) {
-  removeShortcutFromEachUsersStartMenu
-  removeShortcutFromDefault
-  removeShortcutFromAllUsersStartMenu
+  removeShortcutFromEachUsersStartMenu $Shortcut
+  removeShortcutFromDefault $Shortcut
+  removeShortcutFromAllUsersStartMenu $Shortcut
 }
 
 Function removeShortcutFromEachUsersStartMenu($Shortcut) {
@@ -17,6 +17,17 @@ Function removeShortcutFromEachUsersStartMenu($Shortcut) {
   }
 }
 
+
+Function removeShortcutFromDefault($Shortcut) {
+  $Path = "$(defaultUserStartMenuLocation)\$Shortcut"
+  removeFolderOrLink $Path 
+}
+
+
+Function  removeShortcutFromAllUsersStartMenu($Shortcut) {
+  $Path = "$global:ALL_USERS_START_MENU_LOCATION\$Shortcut"
+  removeFolderOrLink $Path 
+}
 
 Function removeFolderOrLink($Path) {
   If (Test-Path $Path) {
@@ -28,15 +39,4 @@ Function removeFolderOrLink($Path) {
       Remove-Item $Path -Force
     }
   }
-}
-
-Function removeShortcutFromDefault($Shortcut) {
-  $Path = "$(defaultUserStartMenuLocation)\$Shortcut"
-  removeFolderOrLink $Path 
-}
-
-
-Function  removeShortcutFromAllUsersStartMenu($Shortcut) {
-  $Path = "$global:ALL_USERS_START_MENU_LOCATION\$Shortcut"
-  removeFolderOrLink $Path 
 }
