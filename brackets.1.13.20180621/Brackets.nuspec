@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>brackets</id>
+    <version>1.13.20180621</version>
+    <title>Brackets</title>
+    <authors>Adobe</authors>
+    <owners>jpratt</owners>
+    <licenseUrl>https://github.com/adobe/brackets/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://brackets.io/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Brackets is an open-source editor for web design and development built on top of web technologies such as HTML, CSS and JavaScript. The project was created and is maintained by Adobe, and is released under an MIT License.</description>
+    <summary>Brackets open-source code editor built with the web for the web.</summary>
+    <releaseNotes>
+      https://github.com/jpratt-mru/software.install.notes/blob/master/Brackets/brackets.notes.md
+    </releaseNotes>
+    <dependencies>
+      <dependency id="macotools.extension" />
+    </dependencies>
+    <copyright>Copyright (c) 2012 - present Adobe Systems Incorporated. All rights reserved.</copyright>
+  </metadata>
+</package>
