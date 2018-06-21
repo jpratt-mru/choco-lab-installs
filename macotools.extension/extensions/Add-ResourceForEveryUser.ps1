@@ -10,7 +10,6 @@ Function Add-ResourceForEveryUser ($ResourceToAdd, $RelativePathToResource) {
   Foreach ($User in $(getUserNames)) {
     Copy-Item $ResourceToAdd -Destination C:\Users\$User\$RelativePathToResource -Force -Recurse
   }
-
   Copy-Item $ResourceToAdd -Destination C:\Users\Default\$RelativePathToResource -Force -Recurse
 }
 

@@ -6,15 +6,29 @@
 # profile and then into every User's profile.
 #
 Function Move-ShortcutFromAllUsersToUserProfiles ($ShortcutName) {
-  Move-Item -Path "$global:ALL_USERS_START_MENU_LOCATION\$ShortcutName" -Destination "$(defaultUserStartMenuLocation)\$ShortcutName"
+  copyFolderOrLink $ShortcutName $global:ALL_USERS_START_MENU_LOCATION $(defaultUserStartMenuLocation)
   copyShortcutFromDefaultToEveryUser $ShortcutName
 }
 
 
 Function copyShortcutFromDefaultToEveryUser ($Shortcut) {
-  $Source = "$(defaultUserStartMenuLocation)\$Shortcut"
+  $Source = $(defaultUserStartMenuLocation)
   Foreach ($User in $(getUserNames)) {
-    $Destination = "$(userStartMenuLocation $User)\$Shortcut"
-    Copy-Item $Source -Destination $Destination -Force -Recurse
+    $Destination = "$(userStartMenuLocation $User)"
+    copyFolderOrLink $ShortcutName $Source $Destination
   }
 } 
+
+
+Function copyFolderOrLink($Item, $RootDir, $DestDir) {
+  $Path = Join-Path $RootDir $Item
+  If (Test-Path $Path) {
+    Copy-Item -Path $Path -Destination $DestDir -Recurse -Force
+  }
+  Else {
+    $Path += ".lnk"
+    If (Test-Path $Path) {
+      Copy-Item -Path $Path -Destination $DestDir -Force
+    }
+  }
+}
